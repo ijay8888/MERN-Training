@@ -1,0 +1,92 @@
+1. Reverse a String
+reverseString("hello"); 
+// Output: "olleh"
+
+
+2. Check for Palindrome
+isPalindrome("madam");     
+// Output: true
+
+isPalindrome("hello");     
+// Output: false
+
+
+3. Find the Longest Word in a Sentence
+longestWord("The quick brown fox jumped over the lazy dog"); 
+// Output: "jumped"
+
+
+4. Flatten a Nested Array
+flatten([1, [2, [3, 4], 5], 6]); 
+// Output: [1, 2, 3, 4, 5, 6]
+
+
+5. Remove Duplicates from an Array
+removeDuplicates([1, 2, 2, 3, 4, 4, 5]); 
+// Output: [1, 2, 3, 4, 5]
+
+
+6. Anagram Checker
+isAnagram("listen", "silent"); 
+// Output: true
+
+isAnagram("hello", "world");  
+// Output: false
+
+
+7. Capitalize First Letter of Each Word
+capitalizeWords("hello world from javascript"); 
+// Output: "Hello World From Javascript"
+
+
+8. Group Objects by a Property
+groupBy([{age: 20}, {age: 30}, {age: 20}], "age"); 
+// Output: { "20": [{age: 20}, {age: 20}], "30": [{age: 30}] }
+
+
+9. Custom Implementation of Array.prototype.map
+customMap([1, 2, 3], x => x * 2); 
+// Output: [2, 4, 6]
+
+
+10. Fetch API with Async/Await and Error Handling
+// Sample call
+await fetchData("https://api.example.com/users"); 
+// Output: Logs users data or error
+
+
+11. Implement a Counter using Closure
+const counter = createCounter();
+counter(); // 1
+counter(); // 2
+
+
+12. Sum of All Even Numbers in a Nested Object
+const obj = {
+  a: 2,
+  b: { c: 4, d: 5 },
+  e: { f: { g: 6 }, h: 3 }
+};
+
+sumEvenNumbers(obj); 
+// Output: 2 + 4 + 6 = 12
+
+
+13. Convert Snake Case to Camel Case
+toCamelCase("this_is_a_test"); 
+// Output: "thisIsATest"
+
+
+14. Validate Email Format
+isValidEmail("test@example.com");    
+// Output: true
+
+isValidEmail("invalid-email");       
+// Output: false
+
+
+15. Class-based Inheritance Example
+const student = new Student("Alice", "Math");
+student.greet();       
+// Output: "Hello, I'm Alice and I study Math"
+

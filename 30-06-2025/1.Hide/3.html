@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Simple Accordion</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    .accordion-header {
+      background-color: #eee;
+      cursor: pointer;
+      padding: 15px;
+      border: 1px solid #ccc;
+      margin-top: 5px;
+    }
+    .accordion-content {
+      display: none;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-top: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="accordion-header">Section 1</div>
+  <div class="accordion-content">
+    <p>This is the content for section 1.</p>
+  </div>
+
+  <div class="accordion-header">Section 2</div>
+  <div class="accordion-content">
+    <p>This is the content for section 2.</p>
+  </div>
+
+
+  <script>
+    $(document).ready(function(){
+        $('.accordion-header').click(function(){
+            $(this).next('.accordion-content').slideToggle();
+
+            $('.accordion-content').not($(this).next()).slideUp();
+        })
+    })
+  </script>
+
+</body>
+</html>

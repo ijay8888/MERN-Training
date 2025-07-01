@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Animation</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    #animation img {
+      display: none;
+      width: 300px; 
+      height: auto;
+      position: absolute;
+      left: 500px;
+      top: 200px;
+    }
+    
+  </style>
+</head>
+<body style="background-color: black;">
+
+  <div id="animation">
+    <img src="../1.png" alt="frame 1" />
+    <img src="../2.png" alt="frame 2" />
+    <img src="../3.png" alt="frame 3" />
+    <img src="../4.png" alt="frame 4" />
+    <img src="../5.png" alt="frame 5" />
+    <img src="../6.png" alt="frame 6" />
+    <img src="../7.png" alt="frame 7" />
+    <img src="../8.png" alt="frame 8" />
+  </div>
+  <script>
+    
+    $(document).ready(function(){
+        const frames = $("#animation img")
+        let i = 0
+
+        setInterval(function(){
+            frames.eq(i % frames.length).hide();
+            i++
+
+            frames.eq(i % frames.length).show();
+        },100)
+    })
+
+
+  </script>
+
+</body>
+</html>

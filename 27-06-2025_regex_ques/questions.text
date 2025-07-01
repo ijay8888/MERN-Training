@@ -1,0 +1,19 @@
+1. Check if a string is a valid email address.
+
+2. Validate if a string contains only digits.
+
+3. Write a regex to match exactly 5-digit postal codes.
+
+4. Check if a string is a valid Indian mobile number (starts with 6-9, 10 digits).
+
+5. Verify if a password contains at least one uppercase letter, one lowercase letter, and one number.
+
+6. Match strings that start with "Hello".
+
+7. Check if a string ends with ".com".
+
+8. Find all words that start with a capital letter in a sentence.
+
+9. Replace multiple spaces with a single space in a string.
+
+10. Check if a string is a valid date in dd-mm-yyyy format.

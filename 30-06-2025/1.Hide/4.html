@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Image Hover Zoom</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+</head>
+<body>
+
+<div class="zoom-container">
+  <img src="https://th.bing.com/th/id/OSK.HEROyTPdrKMNERVqHOBdIpRsg6t4cfHgt1muo0Oitot5TQI?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Zoom Image" />
+</div>
+<script>
+  $("img").hover(
+    function(){
+      $(this).css("transform","scale(1.1)");
+    },
+    function(){
+      $(this).css("transform","scale(1)");
+    }
+  );
+</script>
+    
+</body>
+</html>

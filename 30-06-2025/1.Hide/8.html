@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Real-Time Input Preview</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    input[type="text"] {
+      width: 80%;
+      padding: 10px;
+      margin-bottom: 20px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .preview-box {
+      border: 1px solid #77ef95;
+      padding: 15px;
+      min-height: 50px;
+      background-color: #cbecdd;
+      font-size: 18px;
+      color: #333;
+      border-radius: 4px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <label for="liveInput">Type something:</label>
+  <input type="text" id="liveInput" placeholder="Start typing here...">
+
+  <h2>Live Preview:</h2>
+  <div class="preview-box" id="livePreview"></div>
+
+  <script>
+    $(document).ready(function() {
+      $('#liveInput').on('input', function() {
+        const inputValue = $(this).val();
+
+        $('#livePreview').text(inputValue);
+      });
+    });
+  </script>
+
+</body>
+</html>
