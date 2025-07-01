@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TechConf 2025</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .hero-section {
+            color: white;
+            background: #021508;
+            color: #3f3d3d;
+            padding: 60px 0 40px 0;
+        }
+        .hero-section h1 {
+            font-size: 3rem;
+            font-weight: 300;
+        }
+        .about-section {
+            color: #f6f8fa;
+            background: #131513;
+            padding: 40px 0 20px 0;
+        }
+        
+        .speakers-section {
+            background: #f6f8fa;
+            padding: 40px 0 40px 0;
+        }
+        .register-section {
+            background: whitesmoke;
+            padding: 40px 0 40px 0;
+        }
+        .footer {
+            background: #23272b;
+            color: #fff;
+            padding: 16px 0;
+            text-align: center;
+        }
+        .navbar-nav .nav-link {
+            color: #fff !important;
+        }
+        .card {
+            min-height: 120px;
+            background-color: #021508;
+            color: #fff;
+        }
+        .card:hover{
+            transform: scale(1.05);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            background-color: #c2d6eb;
+            color: #021508
+        }
+        #Conference:hover{
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">TechConf 2025</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#About">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#speakers">Speakers</a></li>
+                <li class="nav-item"><a class="nav-link" href="#register">Register</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    
+
+    <section class="hero-section bg-black">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <h1 class="mb-3 text-light">Join <span style="font-weight:400; color: #c2d6eb;">TechConf 2025</span></h1>
+                    <p class="mb-4" style="color: #fff;">Explore the future of technology with global innovators.</p>
+                    <a href="#" class="btn btn-danger">Register Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="about-section" id="About">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <h3 class="fw-bold">About the Event</h3>
+                    <p>TechConf 2025 unites technology enthusiasts, visionary leaders, and innovators worldwide to explore the latest advancements in AI, blockchain, and cutting-edge digital trends.</p>
+                </div>
+                <div class="col-md-4 text-center" id="Conference">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRIW8sRJI0seacol7vBdSvvDD8PVRMRIhvuQ&s" alt="Conference image" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="speakers-section bg-black" id="speakers">
+        <div class="container">
+            <h3 class="text-center mb-4 fw-bold text-light">Featured Speakers</h3>
+            <div class="row g-3 justify-content-center">
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <div class="d-flex align-items-center mb-2 speaker-card">
+                            <img src="https://plus.unsplash.com/premium_photo-1705883064233-e56b05f42b07?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" height="100px" width="100px" alt="Speaker 1" class="me-2">
+                            <div>
+                                <strong>Jane Doe</strong><br>
+                                <small>AI Researcher, Mercedes</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <div class="d-flex align-items-center mb-2">
+                            <img src="https://plus.unsplash.com/premium_photo-1705883064302-64958d65be71?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"height="100px" width="100px" alt="Speaker 2" class="me-2">
+                            <div>
+                                <strong>John Smith</strong><br>
+                                <small>CEO, IBM</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <div class="d-flex align-items-center mb-2">
+                            <img src="https://plus.unsplash.com/premium_photo-1705883064174-d18341936f26?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"height="100px" width="100px" alt="Speaker 3" class="me-2">
+                            <div>
+                                <strong>Sara Lee</strong><br>
+                                <small>CTO, Engineersmind</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="register-section" id="register">
+        <div class="container">
+            <h3 class="text-center mb-4 fw-bold">Register Now</h3>
+            <form class="mx-auto" style="max-width: 600px;">
+                <div class="row mb-3">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="First Name" required>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Last Name" required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" placeholder="Email Address" required>
+                </div>
+                <button type="submit" class="btn btn-success w-100">Submit</button>
+            </form>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <span>© 2025 TechConf. All rights reserved.</span>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
